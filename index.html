@@ -1,1 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Bites - Vegan & Vegetarian Restaurant</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333333;
+      background-color: #F9F9F9;
+      line-height: 1.6;
+    }
+    header {
+      background: url('hero-image.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 150px 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.5rem;
+      margin: 10px 0 20px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #8AA07B;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    nav a:hover {
+      color: #F5E9D9;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    h2 {
+      color: #8AA07B;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .cta-button {
+      background: #D97C5A;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      transition: background 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #C56A4A;
+    }
+    .menu-item {
+      margin: 20px;
+      display: inline-block;
+      width: 30%;
+      text-align: left;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .menu-item h3 {
+      color: #8AA07B;
+      margin: 0 0 10px;
+    }
+    .menu-item p {
+      color: #666666;
+    }
+    footer {
+      background: #333333;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    footer a {
+      color: #D97C5A;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    form label {
+      display: block;
+      margin: 10px 0 5px;
+      color: #8AA07B;
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #8AA07B;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    form button {
+      background: #D97C5A;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    form button:hover {
+      background: #C56A4A;
+    }
+  </style>
+</head>
+<body>
 
+  <!-- Header -->
+  <header>
+    <h1>Welcome to Green Bites</h1>
+    <p>Fresh. Sustainable. Delicious.</p>
+    <a href="#menu" class="cta-button">Explore Our Menu</a>
+    <a href="#reservations" class="cta-button">Make a Reservation</a>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About Us</a>
+    <a href="#sustainability">Sustainability</a>
+    <a href="#reservations">Reservations</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <h2>From Farm to Table: Our Story</h2>
+    <p>We are passionate about creating delicious, plant-based meals that nourish both people and the planet. Our ingredients are sourced from local farms that share our commitment to sustainability and ethical practices.</p>
+    <h3>Meet the Team</h3>
+    <p>Our head chef, farmers, and staff are dedicated to bringing you the best vegan and vegetarian cuisine.</p>
+    <h3>Farm Partnerships</h3>
+    <p>We partner with local farms like [Farm Name] to bring you the freshest organic produce.</p>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu">
+    <h2>Seasonal. Sustainable. Satisfying.</h2>
+    <div class="menu-item">
+      <h3>Roasted Beet Salad</h3>
+      <p>Featuring beets from [Local Farm], topped with house-made vegan cashew cheese and a balsamic reduction.</p>
+    </div>
+    <div class="menu-item">
+      <h3>Heirloom Tomato Tart</h3>
+      <p>Made with organic tomatoes from [Local Farm Name].</p>
+    </div>
+    <div class="menu-item">
+      <h3>Seasonal Veggie Bowl</h3>
+      <p>A mix of roasted seasonal vegetables, quinoa, and tahini dressing.</p>
+    </div>
+  </section>
+
+  <!-- Sustainability Section -->
+  <section id="sustainability">
+    <h2>Committed to the Planet</h2>
+    <p>We practice zero-waste cooking, use energy-efficient appliances, and source ingredients locally to reduce our carbon footprint.</p>
+    <h3>Local Sourcing</h3>
+    <p>Our ingredients come from farms within a 50-mile radius.</p>
+    <h3>Community Initiatives</h3>
+    <p>We support local environmental organizations and community gardens.</p>
+  </section>
+
+  <!-- Reservations Section -->
+  <section id="reservations">
+    <h2>Join Us for a Meal</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+      <label for="party-size">Party Size:</label>
+      <input type="number" id="party-size" name="party-size" required><br>
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required><br>
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required><br>
+      <label for="requests">Special Requests:</label>
+      <textarea id="requests" name="requests"></textarea><br>
+      <button type="submit" class="cta-button">Book Now</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Follow us on <a href="#">Instagram</a>, <a href="#">Facebook</a>, and <a href="#">TikTok</a>.</p>
+    <p>Sign up for our newsletter to stay updated on seasonal menus and events.</p>
+    <p>Contact us: 123 Green Street, Eco City | (123) 456-7890 | info@greenbites.com</p>
+    <p>Proudly Sustainable Since 2023</p>
+  </footer>
+
+</body>
+</html>
